@@ -3,7 +3,7 @@ const history = document.getElementById('history');
 
 // Define your command responses here
 const commands = {
-    help: `Available commands:
+    help: `Available commands to learn more about me:
   <span class="highlight">about</span>    - Brief summary of who I am
   <span class="highlight">skills</span>   - My technical & operational toolkit
   <span class="highlight">exp</span>      - My professional experience history
