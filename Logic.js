@@ -7,9 +7,10 @@ const commands = {
   <span class="highlight">about</span>    - Brief summary of who I am
   <span class="highlight">skills</span>   - My technical & operational toolkit
   <span class="highlight">exp</span>      - My professional experience history
+  <span class="highlight">certs</span>    - My certifications and Continuous Education
   <span class="highlight">clear</span>    - Clear the terminal screen`,
     
-    about: `<span class="title">Jake Hernandez - Senior Computer Tech & Operations Leader</span>
+    about: `<span class="title">Jake Hernandez - Senior Computer Technician & Samsung Engineer</span>
 ------------------------------------------------------------
 Result-driven technical professional combining enterprise-level 
 hardware engineering with heavy-hitting business operations management. 
@@ -29,7 +30,23 @@ Known for rapid information retention and solving complex technical puzzles.`,
 - Maintain a 95%+ QA repair rating across 20+ assets weekly.
 
 <span class="title">Head of Acquisitions / Partner</span> | Action Home Buyers (2021 - 2023)
-- Generated $850K+ net profit; led and trained a cross-functional team of 14.`
+- Generated $850K+ net profit; led and trained a cross-functional team of 14.
+- Led team of 14 including direct reports and remote staff, running daily meetings and training.
+- Negotiated acquisitions of residential, commercial, and vacant properties.
+- Directed marketing efforts including radio, video, social media, and PPC campaigns.
+
+<span class="title">Audio Visual Technician</span> | Piraino Consulting (2015) 
+- Installed AV infrastructure and configured localized networking systems`,
+
+    certs: `<span class="title">Certifications & Continuous Education</span>
+- <span class="highlight">Asurion Certified Technician</span>, ID: HERNA12100502
+- <span class="highlight">Samsung GSPN Engineer</span>, ID: 5386094922
+- CS50: Introduction to Computer Science | HarvardX / edX (In Progress)
+Algorithmic thinking, data structures, resource management, and software engineering fundamentals using C and Python.
+- SOC Level 1 (Blue Team) Track | TryHackMe (In Progress)
+Hands-on laboratory training in security operations, log analysis, network traffic monitoring, and incident response methodologies.
+- Cybersecurity Fundamentals | CodingX (In Progress)
+Core security principles, threat landscapes, network security architectures, and system hardening basics.`
 };
 
 // Listen for the Enter key
@@ -38,7 +55,7 @@ cmdInput.addEventListener('keydown', function(event) {
         const input = cmdInput.value.trim().toLowerCase();
         
         // Log the prompt and the entered command to history
-        logOutput(`guest@jakehernandez:~# ${cmdInput.value}`, false);
+        logOutput(`hire.me@jakeshell:~# ${cmdInput.value}`, false);
         
         if (input !== '') {
             executeCommand(input);
