@@ -8,6 +8,7 @@ const commands = {
   <span class="highlight">skills</span>   - My technical & operational toolkit
   <span class="highlight">exp</span>      - My professional experience history
   <span class="highlight">certs</span>    - My certifications and Continuous Education
+  <span class="highlight">links</span>    - How to get in touch with me
   <span class="highlight">clear</span>    - Clear the terminal screen`,
     
     about: `<span class="title">Jake Hernandez - Senior Computer Technician & Samsung Engineer</span>
@@ -39,14 +40,19 @@ Known for rapid information retention and solving complex technical puzzles.`,
 - Installed AV infrastructure and configured localized networking systems`,
 
     certs: `<span class="title">Certifications & Continuous Education</span>
-- <span class="highlight">Asurion Certified Technician</span>, ID: HERNA12100502
+- <span class="highlight">Asurion Certified Repair Technician</span>, ID: HERNA12100502
 - <span class="highlight">Samsung GSPN Engineer</span>, ID: 5386094922
 - CS50: Introduction to Computer Science | HarvardX / edX (In Progress)
 Algorithmic thinking, data structures, resource management, and software engineering fundamentals using C and Python.
 - SOC Level 1 (Blue Team) Track | TryHackMe (In Progress)
 Hands-on laboratory training in security operations, log analysis, network traffic monitoring, and incident response methodologies.
 - Cybersecurity Fundamentals | CodingX (In Progress)
-Core security principles, threat landscapes, network security architectures, and system hardening basics.`
+Core security principles, threat landscapes, network security architectures, and system hardening basics.`,
+    
+    links: `<span class="title">Contact & Connect</span>
+    <a href="mailto:jacob.hernandez313@gmail.com" class="terminal-link">jacob.hernandez313@gmail.com</a> | 
+    <a href="https://www.linkedin.com/in/jakehernandez313" target="_blank" rel="noopener noreferrer" class="terminal-link">linkedin.com/in/jakehernandez313</a>`,
+
 };
 
 // Listen for the Enter key
@@ -55,7 +61,7 @@ cmdInput.addEventListener('keydown', function(event) {
         const input = cmdInput.value.trim().toLowerCase();
         
         // Log the prompt and the entered command to history
-        logOutput(`hire.me@jakeshell:~# ${cmdInput.value}`, false);
+        logOutput(`<span class="highlight">hire.me@jakeshell:~#</span> ${cmdInput.value}`, false);
         
         if (input !== '') {
             executeCommand(input);

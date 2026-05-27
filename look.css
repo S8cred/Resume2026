@@ -51,3 +51,14 @@ body {
     color: #d2a8ff;
     font-weight: bold;
 }
+
+.terminal-link {
+    color: #7ee787; 
+    text-decoration: none; 
+    border-bottom: 1px dashed #7ee787; 
+}
+
+.terminal-link:hover {
+    color: #58a6ff;
+    border-bottom: 1px solid #58a6ff;
+}
