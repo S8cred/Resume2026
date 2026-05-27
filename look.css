@@ -22,6 +22,11 @@ body {
     line-height: 1.4;
 }
 
+.divider {
+    border-top: 1px solid #c9d1d9;
+    margin: 10px 0;
+}
+
 #input-line {
     display: flex;
     align-items: center;
