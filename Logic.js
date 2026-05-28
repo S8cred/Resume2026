@@ -1,7 +1,7 @@
 const cmdInput = document.getElementById('cmd-input');
 const history = document.getElementById('history');
 
-// Define your command responses here
+// Command Responses
 const commands = {
     help: `Available commands to learn more about me:
   <span class="highlight">about</span>    - Brief summary of who I am
@@ -55,25 +55,23 @@ Core security principles, threat landscapes, network security architectures, and
 
 };
 
-// Listen for the Enter key
+// Handle command input
 cmdInput.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         const input = cmdInput.value.trim().toLowerCase();
         
-        // Log the prompt and the entered command to history
         logOutput(`<span class="highlight">hire.me@jakeshell:~#</span> ${cmdInput.value}`, false);
         
         if (input !== '') {
             executeCommand(input);
         }
         
-        // Clear input and scroll down
+        
         cmdInput.value = '';
         window.scrollTo(0, document.body.scrollHeight);
     }
 });
 
-// Focus input on clicking anywhere in the terminal
 document.addEventListener('click', () => cmdInput.focus());
 
 function executeCommand(cmd) {
